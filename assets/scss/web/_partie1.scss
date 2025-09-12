@@ -1,0 +1,43 @@
+@import "../core/dir-core";
+main{
+    .partie1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 68px;
+        margin-top: 138px;
+        .lefttext{
+            margin-left: 106px;
+            width: 520px;
+            height: 547px;
+            display: flex;
+            flex-direction: column;
+            gap: 62px;
+            // border: 20px double red;
+            .We{
+                font-family: $font-primary;
+                font-size: 48px;
+                color: $text-color1;
+            }
+            .Come{
+                @extend .We;
+                font-size: 24px;
+            }
+            a{
+                width: 329px;
+                height: 84px;
+                font-size: 30px;
+                color: $text-color1;
+                font-weight: $font-primary;
+                background-color: $primary-color;
+                text-align: center;
+                padding-top: 25px;
+    
+            }
+        }
+        img{
+            height: 520px;
+            width:573px;
+            margin-top: -40px;
+        }
+    }
+}

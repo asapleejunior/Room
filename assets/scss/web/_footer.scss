@@ -1,0 +1,43 @@
+@import "../core/dir-core";
+footer{
+    .all{
+        @include mixin-footer;
+        margin-left: 65px;
+        padding: 10px;
+        height: 93px;
+        width: 1224px;
+        background-color: $primary-color;
+        .COPY{
+            color: $text-color1;
+            font-size: 18px;
+
+        }
+        .three{
+            // display: flex;
+            // flex-direction: row;
+            // align-items: center;
+            @extend .num;
+            justify-content: space-between;
+            width: 274px;
+            img{
+                width: 32px;
+                height: 29px;
+
+            }
+        }
+        .num{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img{
+                width: 32px;
+                height: 29px;
+            }
+            .numero{
+                @extend .COPY;
+            }
+        }
+    }
+
+
+}

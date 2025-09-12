@@ -1,0 +1,187 @@
+@import "../core/dir-core";
+main{
+    .partie3{
+        .Comb2{
+            margin-top: 213px;
+            .title2{
+                font-size: 60px;
+                font-family: $font-primary;
+                color: $secondary-color;
+                text-align: center;
+            }
+            .p2{
+                font-family: $font-primary;
+                color: $text-color1;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
+    .bloc{
+        .firstrow{
+            @include mixin-row;
+            .bloc1{
+                height: 241px;
+                width: 324px;
+                background-color: $bg-part3;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .R1{
+                    margin-top: 25px;
+                    font-size: 30px;
+                    font-family: $font-primary;
+                    color: $text-color1;
+                    text-align: center;
+                    text-decoration: underline;
+    
+                }
+                .soratra1{
+                    font-size: 18px;
+                    font-family: $font-primary;
+                    color: $text-color1;
+                    text-align: center;
+    
+                }
+            }
+            .bloc3{
+                // height: 241px;
+                // width: 324px;
+                // background-color: $bg-part3;
+                // display:flex;
+                // flex-direction: column;
+                // justify-content: space-evenly;
+                @extend .bloc1;
+                .R3{
+                    // margin-top: 25px;
+                    // font-size: 30px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    // text-decoration: underline;
+                @extend .R1;
+    
+                }
+                .soratra3{
+                    // font-size: 18px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                @extend .soratra1;
+
+    
+                }
+            }
+            .bloc2{
+                // height: 241px;
+                // width: 324px;
+                // background-color: $bg-part3;
+                // display:flex;
+                // flex-direction: column;
+                // justify-content: space-evenly;
+                @extend .bloc1;
+                .R2{
+                    // margin-top: 25px;
+                    // font-size: 30px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    // text-decoration: underline;
+                    @extend .R1;
+    
+                }
+                .soratra2{
+                    // font-size: 18px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    @extend .soratra1;
+    
+                }
+            }
+            
+        }
+        .secondrow{
+            @extend .firstrow;
+            .bloc1{
+                height: 241px;
+                width: 324px;
+                background-color: $bg-part3;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .R1{
+                    margin-top: 25px;
+                    font-size: 30px;
+                    font-family: $font-primary;
+                    color: $text-color1;
+                    text-align: center;
+                    text-decoration: underline;
+    
+                }
+                .soratra1{
+                    font-size: 18px;
+                    font-family: $font-primary;
+                    color: $text-color1;
+                    text-align: center;
+    
+                }
+            }
+            .bloc3{
+                // height: 241px;
+                // width: 324px;
+                // background-color: $bg-part3;
+                // display:flex;
+                // flex-direction: column;
+                // justify-content: space-evenly;
+                @extend .bloc1;
+                .R3{
+                    // margin-top: 25px;
+                    // font-size: 30px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    // text-decoration: underline;
+                @extend .R1;
+    
+                }
+                .soratra3{
+                    // font-size: 18px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                @extend .soratra1;
+
+    
+                }
+            }
+            .bloc2{
+                // height: 241px;
+                // width: 324px;
+                // background-color: $bg-part3;
+                // display:flex;
+                // flex-direction: column;
+                // justify-content: space-evenly;
+                @extend .bloc1;
+                .R2{
+                    // margin-top: 25px;
+                    // font-size: 30px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    // text-decoration: underline;
+                    @extend .R1;
+    
+                }
+                .soratra2{
+                    // font-size: 18px;
+                    // font-family: $font-primary;
+                    // color: $text-color1;
+                    // text-align: center;
+                    @extend .soratra1;
+    
+                }
+            }
+        }
+    }
+}

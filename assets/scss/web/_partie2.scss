@@ -1,0 +1,131 @@
+@import "../core/dir-core";
+main{
+    .partie2{
+        .Comb1{
+            margin-top: 213px;
+            .title1{
+                font-size: 60px;
+                font-family: $font-primary;
+                color: $secondary-color;
+                text-align: center;
+
+            }
+            .p1{
+                font-family: $font-primary;
+                color: $text-color1;
+                font-size: 30px;
+                text-align: center;
+
+            }
+        }
+        .row{
+            @include mixin-column;
+            margin-top: 78px;
+            .row1{
+                @include mixin-row;
+                .card1{
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+                    width:337px ;
+                    text-align: center;
+                    .Room1{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+        
+                    }
+                    .img1{
+                        height: 250px;
+                        width: 337px;
+        
+                    }
+                
+                }
+                .card2{
+                    @extend .card1;
+                    .Room2{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+        
+                    }
+                    .img2{
+                        // @extend .img1;
+                        height: 250px;
+                        width: 337px;
+                    }
+                
+                }
+                .card3{
+                    @extend .card1;
+                    .Room3{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+                    }
+                    img{
+                        @extend .img1;
+                        height: 250px;
+                        width: 337px;
+                    }
+                
+                }
+            }
+            .row2{
+                @include mixin-row;
+                .card4{
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+                    width:337px ;
+                    text-align: center;
+                    .Room4{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+                    }
+                    img{
+                        @extend .img1;
+                        height: 250px;
+                        width: 337px;
+                    }
+                
+                }
+                .card5{
+                    @extend .card4;
+                    .Room5{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+                    }
+                    img{
+                        @extend .img1;
+                        height: 250px;
+                        width: 337px;
+                    }
+                
+                }
+                .card6{
+                    @extend .card4;
+                    .Room6{
+                        font-size: 30px;
+                        color: $text-color1;
+                        font-family: $font-primary;
+        
+                    }
+                    img{
+                        @extend .img1;
+                        height: 250px;
+                        width: 337px;
+                    }
+                
+                }
+            }
+
+        }
+        
+    }
+    
+    }
+    

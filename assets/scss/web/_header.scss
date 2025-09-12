@@ -1,0 +1,40 @@
+@import "../core/dir-core";
+header{
+    height: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .logo{
+        img{
+            height: 53px;
+            width: 151px;
+            // margin-left: 4px;
+
+        }
+    }
+    nav{
+        width: 662px;
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            ul{
+                a{
+                    font-size: 20px;
+                    font-family: $font-primary;
+                    color: $text-color1;
+
+                }
+            }
+        }
+    }
+    .call{
+        .paragraphe{
+            @extend a;
+            font-family: $font-secondary;
+
+        }
+
+    }
+}
