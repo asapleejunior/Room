@@ -1,1 +1,1 @@
-Integration maquette avec sass
+Integration maquette psd avec sass
